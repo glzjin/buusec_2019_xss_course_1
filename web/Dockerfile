@@ -1,5 +1,7 @@
 FROM ctftraining/base_image_nginx_mysql_php_73
 
+ENV PASSWORD 0xynb067e5d06b06capry40bte097ypa
+
 LABEL Author="glzjin <i@zhaoj.in>" Blog="https://www.zhaoj.in"
 
 COPY ./files /tmp/
