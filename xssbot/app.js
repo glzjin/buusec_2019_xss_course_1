@@ -1,11 +1,11 @@
 const puppeteer = require('puppeteer-core');
 const http = require('http');
 
-const LOGIN_URL = "http://web/backend/login.php";
-const ADMIN_URL = "http://web/backend/treehole_list.php";
-const REFERER_URL = "http://web/backend/admin.php";
-const PASSWORD = "0xynb067e5d06b06capry40bte097ypa";
-const DOMAIN = "web";
+const LOGIN_URL = process.env.LOGIN_URL || "http://web/backend/login.php";
+const ADMIN_URL = process.env.ADMIN_URL || "http://web/backend/treehole_list.php";
+const REFERER_URL = process.env.REFERER_URL || "http://web/backend/admin.php";
+const PASSWORD = process.env.PASSWORD || "123456";
+const DOMAIN = process.env.HOST || "web";
 
 var num = 0;
 var phpsessid = '';
