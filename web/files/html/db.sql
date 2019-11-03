@@ -11,7 +11,7 @@ create table if not exists admin
 
 create table if not exists treehole
 (
-	id varchar(1000) not null
+	id varchar(200) not null
 		primary key,
 	content varchar(10000) not null,
 	is_viewed tinyint default '0' not null
